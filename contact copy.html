@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src = "https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png" alt="FAHASA LOGO">
+            <div class="navlinks">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="comics.html">MANGA - COMIC</a></li>
+                    <li><a href="comics.html">FOREIGN BOOKS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form_overall">
+            <div class="contact_container">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="contact_container">
+                <form onsubmit="return false;" method="post" enctype="multipart/form-data">
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="purpose">CONTACT PURPOSE</label>
+                        </div>
+                        <div class="form_field">
+                            <select id = "purpose" name = "purpose" required size="2">
+                                <option value="sell">I want to sell books</option>
+                                <option value="buy">I want to buy books</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="email">YOUR NAME</label>
+                        </div>
+                        <div class="form_field">
+                            <input required id="name" type="text" name="name" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="email">YOUR EMAIL</label>
+                        </div>
+                        <div class="form_field">
+                            <input required id="email" type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="phone">YOUR PHONE NUMBER</label>
+                        </div>
+                        <div class="form_field">
+                            <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label>PREFERED CONTACT METHOD</label>
+                        </div>
+                        <div class="form_field">
+                            <ul>
+                                <li>
+                                    <input required type="checkbox" id="by_email" name="contact_methods[]" value="by_email">
+                                    <label for="by_email">BY EMAIL</label>
+                                </li>
+                                <li>
+                                    <input required type="checkbox" id="by_phone" name="contact_methods[]" value="by_phone">
+                                    <label for="by_email">BY PHONE</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label>DO YOU WANT TO RECEIVE OUR WEEKLY NEWSLETTER?</label>
+                        </div>
+                        <div class="form_field">
+                        <ul>
+                            <li>
+                                <input required checked type="radio" id="yes" name="yes" value="yes" >
+                                <label for="yes">YES</label>
+                            </li>
+                            <li>
+                                <input required type="radio" id="no" name="no" value="no">
+                                <label for="no">NO</label>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_label">
+                            <label for="note">NOTE</label>
+                        </div>
+                        <div class="form_field">
+                            <textarea cols="40" rows="10" required id="note" name="note"></textarea>
+                        </div>
+                    </div>
+                    <div id= "btn" class="form_row">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">            
+                    </div>
+            </form>
+        </div>
+            </div>
+               
+    </main>
+    <footer>
+        <nav>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS</a></li>
+                    <li><a href="#">COPYRIGHT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
